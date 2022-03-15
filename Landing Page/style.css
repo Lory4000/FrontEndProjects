@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+}
+
+#header {
+    width: 100%;
+    height: auto;
+    display: flex;  
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: #eee;
+}
+
+#header #header-img {
+    display: flex;
+    height: 40px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+#header #nav-bar {
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+    position: sticky;
+}
+
+#form {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto 50px auto;
+}
+
+#form #email {
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+#form #form-title{
+    margin-top: 0;
+}
+
+#form #submit {
+    width: 30%;
+    padding: 5px;
+    font-weight: 1000;
+    font-size: 15px;
+    background-color: rgb(243, 223, 45);
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+#form #submit:hover {
+    background-color: rgb(243, 197, 45);
+}
+
+#feature {
+    max-width: 980px;
+    margin: auto;
+}
+
+#feature .row {
+   display: flex;
+   width: 100%
+}
+
+#feature .row .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 125px;
+    color: rgb(243, 197, 45);
+    font-size: 3em;
+}
+
+#feature .row .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80%;
+}
+
+#feature .row .description h2, #feature .row .description p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#video {
+    display: block;
+    margin: 50px auto;
+}
+
+#prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#prices .card {
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+    flex-basis: 33%;
+}
+
+#prices .card .card-title h4 {
+    background-color: rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-top: 0;
+}
+
+#prices .card .card-btn {
+    margin: 15px;
+}
+
+#prices .card .card-btn button {
+    padding: 10px 20px;
+    background-color: rgb(243, 223, 45);
+    border: none;
+    font-size: 16px;
+    transition: 0.5s all ease-out;
+    cursor: pointer;
+}
+
+#prices .card .card-btn button:hover {
+    background-color: rgb(243, 197, 45);
+}
+
+#footer {
+    height: 100px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 7px;
+}
+
+
+#footer #footer-content #footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer #footer-content #copyright  {
+    color: rgb(80, 79, 79);
+    font-size: 14px;
+}
+
+#footer #footer-content {
+    margin-right: 20px
+}
+
+@media (max-width: 700px) {
+    #header {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #header #header-img {
+        height: 30px;
+        margin: 15px auto;
+    }
+
+    #header #nav-bar{
+        flex-direction: column;
+        margin: 0px auto 10px auto;
+    }
+
+    #video {
+        width: 100%;
+    }
+
+    #prices{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
