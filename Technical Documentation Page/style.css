@@ -1,0 +1,26 @@
+/*Lucida Console come font dei codici Java/JavaScript da mettere nella pagina*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+#main-doc {
+    padding-left: 30px;
+}
+#main-doc .main-section h1 {
+    font-size: 1.8em;
+}
+
+#main-doc .main-section .code {
+    font-family: 'Lucida Console', arial;
+    font-size: 0.7em;
+    line-height: 2;
+    background-color: rgba(0,0,0,0.05);
+    color: rgba(0,0,0,0.7);
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+#main-doc .main-section .description {
+    padding-left: 15px;
+}
