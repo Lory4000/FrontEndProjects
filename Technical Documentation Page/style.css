@@ -1,26 +1,94 @@
-/*Lucida Console come font dei codici Java/JavaScript da mettere nella pagina*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 1em;
+    margin: 0;
+    line-height: 1.6;
 }
 
 #main-doc {
-    padding-left: 30px;
+    margin-left: 330px;
+    margin-right: 20px;
+    position: absolute;
 }
-#main-doc .main-section h1 {
+h1 {
     font-size: 1.8em;
+    font-weight: 300;
+}
+
+#main-doc .main-section ul li {
+    padding: 10px;
 }
 
 #main-doc .main-section .code {
-    font-family: 'Lucida Console', arial;
-    font-size: 0.7em;
-    line-height: 2;
+    font-size: 1em;
+    line-height: 1.5;
     background-color: rgba(0,0,0,0.05);
     color: rgba(0,0,0,0.7);
-    padding: 20px 15px;
+    padding: 18px 15px;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 #main-doc .main-section .description {
     padding-left: 15px;
+    color: rgba(0,0,0,0.7);
+    font-weight: 100;
+}
+
+#main-doc .main-section .description ul {
+    margin-left: 20px;
+}
+#navbar {
+    min-width: 300px;
+    border-right: 3px solid rgba(0,0,0,0.3);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+#navbar h1{
+    text-align: center;
+    margin: 10px auto 20px auto;
+}
+#navbar #options {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90%;
+    padding: 0;
+}
+#navbar a {
+    display: block;
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    padding: 10px 0px 10px 25px;
+    border-top: 1px solid rgba(0,0,0,0.7);
+}
+
+@media(max-width: 900px) {
+    #navbar{
+        width: 100vw;
+        max-height: 300px;
+        overflow-y: scroll;
+        border-bottom: 3px solid rgba(0,0,0,0.7);
+        position: relative;
+    }
+
+    #navbar #options {
+        border: 1px solid black;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+
+    #main-doc .main-section h1 {
+        padding-left: 15px;
+    }
+
+    #main-doc .main-section .description {
+        padding-left: 15px;
+    }
+    #main-doc .main-section ul {
+        padding-left: 0;
+    }
 }
