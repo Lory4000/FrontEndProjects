@@ -1,0 +1,221 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+#header {
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#navbar {
+    background-color: rgb(190, 58, 58);
+    box-shadow: 1px 1px 0 1px rgba(0,0,0,0.4);
+    position: fixed;
+    width: 100vw;   
+}
+
+#navbar #navbar-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-right: 30px;
+}
+#navbar #navbar-items li {
+    padding: 25px;
+    cursor: pointer;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar #navbar-items li:hover {
+    background-color: rgba(63, 63, 207,0.8);
+}
+
+#header #welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+#welcome-section p {
+    color:rgb(190, 58, 58);
+    font-style: italic;
+    font-size: 28px;
+}
+#main {
+    background: #5a6d9b;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main h2 {
+    margin: 90px auto 60px auto;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 40px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+#main #projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin: auto;
+    max-width: 1280px;
+    grid-gap: 40px;
+    font-weight: 500;
+}
+
+#projects .project-tile {
+    transition: 0.3s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0,0,0,0.4);
+}
+
+.project-tile:hover {
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.project-tile .image {
+    height: 380px;
+    object-fit: cover;
+}
+
+
+.project-tile .project-title{
+    text-align: center;
+    color: white;
+    background-color: #2f3547;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.project-title .hover {
+    color: #2f3547;
+    transition: 0.5s ease-in-out;
+}
+
+.project-tile:hover .hover {
+    color:rgb(218, 84, 84);
+}
+
+#profile-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin: 50px auto 70px auto;
+    background-color: #2f3547;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 3px;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#profile-link:hover {
+    background-color: rgb(190, 58, 58);
+}
+
+#profile-link #arrow .fa-chevron-right {
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+#profile-link:hover #arrow .fa-chevron-right {
+    margin-left: 2px;
+    margin-right: -2px;
+}
+
+#social-media {
+    background-color: #2f3547;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    width: 100%;
+}
+
+#social-media #description {
+    text-align: center;
+    margin: auto;
+}
+
+#description h1 {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+#description p {
+    font-style: italic;
+    font-size: 19px;
+}
+
+#social-media #media-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    gap: 30px;
+}
+
+#media-buttons .social-links {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px black;
+    transition: 0.3s ease-in-out;
+}
+
+.social-links:hover {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#red-line {
+    border: 2px solid rgb(190, 58, 58);
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2f3547;
+    color: white;
+    font-size: 18px;
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
